@@ -5,15 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes, minimum-scale=1">
     
         <title>DESCRPTIVE || Consulting Redefined </title>
-        <link href="<?php echo $BASEURL ?>/css/animate.min.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo $BASEURL ?>/css/style.css" rel="stylesheet" type="text/css">
-        <link href="<?php echo $BASEURL ?>/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <link href="assets/descriptive/css/animate.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/descriptive/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/descriptive/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" type="text/css">
-        <script src="<?php echo $BASEURL ?>/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/descriptive/js/jquery-3.4.1.min.js"></script>
     </head>
 
 <body>
-    <?php include_once 'component/navigation.php'; ?>
+    <!-- <?php include_once 'component/navigation.php'; ?> -->
+    <header class="grid">
+        <a href="/index" class="descrptive-logo" title="descrptive-logo">Descrptive Logo</a>
+        <div class="hamburgermenu_icon" id="hammenu">
+            <div></div>
+        </div>
+        <div class="navigation">
+            <ul class="navrow">
+                <ul id="primary-menu" class="menu nav-menu index" aria-expanded="false">
+                    <li><a href="/about-us" class="navlink active">About</a></li>
+                    <li><a href="/insights" class="navlink">Insights</a></li>
+                    <li><a href="/industries" class="navlink">Industries</a></li>
+                    <li><a href="/services" class="navlink">Services</a></li>
+                    <li><a href="/career" class="navlink">Career</a></li>
+                    <li class="navlink btn"><a href="lead-form">Lets Talk</a></li>
+                </ul>
+            </ul>
+        </div>
+    </header>
 
     <div class="descrptive-section half-height">
         <div class="contentBox mrt">
@@ -28,14 +46,14 @@
         <div class="grid">
             <div class="boxset">
                 <div class="boxleft">
-                    <div class="imgbox"><img src="/images/img-industry-healthcare.jpg"></div>
+                    <div class="imgbox"><img src="assets/descriptive/images/img-industry-healthcare.jpg"></div>
                 </div>
                 <div class="boxleft withtext">
                     <h2>Healthcare</h2>
                     <p>The pandemic has emphasized a need for increased patient focus to help build a more
                         resilient supply chain.</p>
 
-                    <a href="/industries/healthcare.php" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
+                    <a href="/industries/healthcare" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
                     </a>
 
                 </div>
@@ -50,12 +68,12 @@
                     <p>We can help you with trends and consulting as the industry is disrupted by shifts in
                         technology and audience demographics.</p>
 
-                    <a href="/industries/technology.php" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
+                    <a href="/industries/technology" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
                     </a>
 
                 </div>
                 <div class="boxleft">
-                    <div class="imgbox"><img src="/images/img-industry-technology.jpg"></div>
+                    <div class="imgbox"><img src="assets/descriptive/images/img-industry-technology.jpg"></div>
                 </div>
 
             </div>
@@ -65,13 +83,13 @@
         <div class="grid">
             <div class="boxset">
                 <div class="boxleft">
-                    <div class="imgbox"><img src="/images/img-industry-media1.jpg"></div>
+                    <div class="imgbox"><img src="assets/descriptive/images/img-industry-media1.jpg"></div>
                 </div>
                 <div class="boxleft withtext">
                     <h2>Media & Entertainment</h2>
                     <p>With us adopt you will get a digital-first approach in response to shifts in audience
                         demographics, technology and business.</p>
-                    <a href="/industries/media.php" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
+                    <a href="/industries/media" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
                     </a>
 
                 </div>
@@ -86,12 +104,12 @@
                     <p>Driven by changing consumer behavior and new mobile technology, telecom Firms need to
                         find innovative and sustainable revenue opportunities.</p>
 
-                    <a href="/industries/renewables-sustainability.php" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
+                    <a href="/industries/renewables-sustainability" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
                     </a>
 
                 </div>
                 <div class="boxleft">
-                    <div class="imgbox"><img src="/images/img-industry-renewables.jpg"></div>
+                    <div class="imgbox"><img src="assets/descriptive/images/img-industry-renewables.jpg"></div>
                 </div>
 
             </div>
@@ -101,14 +119,14 @@
         <div class="grid">
             <div class="boxset">
                 <div class="boxleft">
-                    <div class="imgbox"><img src="/images/img-industry-animalhealth.jpg"></div>
+                    <div class="imgbox"><img src="assets/descriptive/images/img-industry-animalhealth.jpg"></div>
                 </div>
                 <div class="boxleft withtext">
                     <h2>Animal Health</h2>
                     <p>The lives of animals and humans are interconnected in deep and complex ways as we use
                         artificial intelligence (AI) to solve complex problems</p>
 
-                    <a href="/industries/animal-health.php" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
+                    <a href="/industries/animal-health" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
                     </a>
 
                 </div>
@@ -123,12 +141,12 @@
                     <p>The industry remains challenged by market volatility and a shifting economic,
                         regulatory, and competitive landscape.</p>
 
-                    <a href="/industries/automotive.php" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
+                    <a href="/industries/automotive" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
                     </a>
 
                 </div>
                 <div class="boxleft">
-                    <div class="imgbox"><img src="/images/img-industry-automobile.jpg"></div>
+                    <div class="imgbox"><img src="assets/descriptive/images/img-industry-automobile.jpg"></div>
                 </div>
 
             </div>
@@ -225,9 +243,105 @@
         </div>
     </div> -->
 
-    <?php include_once 'component/lead-form.php'; ?>
+    <!-- <?php include_once 'component/lead-form.php'; ?>
 
-    <?php include_once 'component/footer.php'; ?>
+    <?php include_once 'component/footer.php'; ?> -->
+
+    <div class="d5block" id="lead-form">
+        <div class="grid">
+            <div class="subfooter">
+                <div class="col-50 animate__animated">
+                    <div class="fullbox">
+                        <h3>Contact Us</h3>
+                        <div class="subcontent">Provide us with some basic information, and we shall get in touch with you
+                        </div>
+                    </div>
+                </div>
+                <div class="col-50 ds animate__animated">
+                    <form name='form-lead' method='post' action="configration.php">
+                    <div class="form50">
+                        <div class="formBox ">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Name" value="" />
+                        </div>
+                        <div class="formBox">
+                            <label>Email</label>
+                            <input type="text" name="email"  placeholder="Email" value="" />
+                        </div>
+                        <div class="formBox">
+                            <label>Phone</label>
+                            <input type="text" name="phone"  placeholder="Phone" value="" />
+                        </div>
+                        <div class="formBox ">
+                            <label>Name</label>
+                            <select>
+                                <option value="business-use">Business</option>
+                                <option value="career-use">Career</option>
+                            </select>
+                        </div>
+                        <div class="formBox">
+                            <label>Comments</label>
+                            <textarea type="text" name="comment" cols="2" rows="2" placeholder="Write a detailed project requirement" value="" /></textarea>
+                        </div>
+                        <div class="formBox">
+                            <div class="upload-btn-wrapper">
+                                <button class="upload-btn-wrapper_btn">Upload a file</button>
+                                <input type="file" name="myfile" />
+                            </div>
+                        </div>
+
+                        <input type="submit" type="submit" name="submit" value="Register Now" class="btn" />
+                        
+                    </div>
+    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="csfooter">
+        <div class="grid">
+            <div class="footerlogo">
+                <img src="assets/descriptive//images/logodark.png" width="214" heght="67">
+            </div>
+            <div class="footer-item">
+                <div class="footer-left">
+                    <div class="flex-align">
+                        <div class="col50">
+                            <div class="add">Suite # 1105, 38 Dan Leckie Way Toronto M5V 2V6, Canada</div>
+                            hello@descriptive.ai
+                        </div>
+                        <div class="col50">
+    
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="footer-right">
+                    <ul class="ftlink">
+                        <li><a href="/about-us">About</a></li>
+                        <li><a href="/insights">Insights</a></li>
+                        <li><a href="/industries">Industries</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/career">Career</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerlogo hide">
+                <ul class="sociallink">
+                    <li><a href="https://www.facebook.com/k2sconsult" class="socialimg facebook invert">Facebook</a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="socialimg twitter invert">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/company/k2sconsult" class="socialimg linkedin invert">Linkedin</a></li>
+                    <li><a href="https://www.instagram.com/k2sconsult" class="socialimg insta invert">Instagram</a>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

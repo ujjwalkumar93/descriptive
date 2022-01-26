@@ -1,0 +1,170 @@
+//USING FOR TRAVEL
+
+//Typography
+$typography: 'f37_ginger_proregular_it';
+
+// Global variables
+$body-font-size: 16px !default;
+$body-line-height: 1.5 !default;
+
+
+
+// Color scheme palette
+//PRIMARY COLORS
+
+$black:#000;
+$lightblue:#E5E8FF;
+$white :#fff;
+$lightpurple:#F9F8FB;
+$pink:#cb0969;
+$purple:#4A478C;
+$darkblue:#2B2A3A;
+// grid variables
+$row: 1140px;
+$row-max: 1440px;
+$full:100%;
+
+// breakpoints
+$xxsmall: 360;
+
+// 0
+$xsmall: 640px;
+
+// 40em
+$small: 768px;
+
+// 48em
+$medium: 1024px;
+
+// 64em
+$large: 1200px;
+
+// 75em
+$xlarge: 1500px;
+
+// 93.750em
+$xxlarge: 1760px;
+
+// 110em
+
+
+// Mixin
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+@mixin rounded-corner($arc) {
+    -moz-border-radius: $arc;
+    -webkit-border-radius: $arc;
+    border-radius: $arc;  
+}
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;       
+            box-shadow: $shadow;
+  }
+@mixin text-shadow($shadow) {
+-webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;       
+        text-shadow: $shadow;
+}
+  
+@mixin transform($param) {
+    -webkit-transform: $param;
+    -moz-transform: $param;
+    -o-transform: $param;
+    transform: $param;
+  }
+@mixin transition($param) {
+    -webkit-transition: $param;
+    -moz-transition: $param;
+    -o-transition: $param;
+    transition: $param;
+}
+@mixin grid{
+    width: $row;
+    margin:0px auto;
+    @media #{$medium-plane}{width: 100%; padding:0px 20px}
+}
+
+
+
+
+// Media
+$xxsmall-up: "only screen and (min-width:#{$xxsmall})";
+$xsmall-up: "only screen and (min-width:#{$xsmall})";
+$small-up: "only screen and (min-width:#{$small})";
+$medium-up: "only screen and (min-width:#{$medium})";
+$large-up: "only screen and (min-width:#{$large})";
+$xlarge-up: "only screen and (min-width:#{$xlarge})";
+$xxlarge-up: "only screen and (min-width:#{$xxlarge})";
+
+$xsmall-down: "only screen and (max-width:#{$xsmall - 1})";
+$small-down: "only screen and (max-width:#{$small - 1})";
+$medium-down: "only screen and (max-width:#{$medium - 1})";
+$large-down: "only screen and (max-width:#{$large - 1})";
+$xlarge-down: "only screen and (max-width:#{$xlarge - 1})";
+$xxlarge-down: "only screen and (max-width:#{$xxlarge - 1})";
+
+$xxsmall-plane: "only screen and (max-width:#{$xsmall})";
+$xsmall-plane: "only screen and (max-width:#{$xsmall})";
+$small-plane: "only screen and (max-width:#{$small})";
+$medium-plane: "only screen and (max-width:#{$medium})";
+$large-plane: "only screen and (max-width:#{$large})";
+$xlarge-plane: "only screen and (max-width:#{$xlarge})";
+$xxlarge-plane: "only screen and (max-width:#{$xxlarge})";
+
+$mobile: "only screen and (min-width:#{$xxsmall}) and (max-width:#{$xsmall})";
+$tab: "only screen and (min-width:#{$xsmall}) and (max-width:#{$small})";
+$iPad: "only screen and (min-width:#{$small}) and (max-width:#{$medium})";
+$laptop: "only screen and (min-width:#{$medium}) and (max-width:#{$large})";
+$desktop: "only screen and (min-width:#{$large}) and (max-width:#{$xlarge})";
+
+@-webkit-keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @mixin arrowcall {
+    -webkit-transition: transform 0.3s ease-out;
+    -moz-transition: transform 0.3s ease-out;
+    -ms-transition: transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transform: rotate(0deg);
+  }
+  @mixin arrowcall_hover {
+    -webkit-transform: translateX(8px);
+            -moz-transform: translateX(8px);
+            -ms-transform: translateX(8px);
+            -o-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+
+
+
+ 

@@ -1,0 +1,196 @@
+<html>
+
+<?php include_once 'component/header.php'; ?>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes, minimum-scale=1">
+
+    <title>DESCRPTIVE || Consulting Redefined </title>
+    <link href="assets/descriptive/css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/descriptive/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/descriptive/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="assets/descriptive/js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <!-- <?php include_once 'component/navigation.php'; ?> -->
+    <header class="grid">
+        <a href="/index" class="descrptive-logo" title="descrptive-logo">Descrptive Logo</a>
+        <div class="hamburgermenu_icon" id="hammenu">
+            <div></div>
+        </div>
+        <div class="navigation">
+            <ul class="navrow">
+                <ul id="primary-menu" class="menu nav-menu index" aria-expanded="false">
+                    <li><a href="/about-us" class="navlink active">About</a></li>
+                    <li><a href="/insights" class="navlink">Insights</a></li>
+                    <li><a href="/industries" class="navlink">Industries</a></li>
+                    <li><a href="/services" class="navlink">Services</a></li>
+                    <li><a href="/career" class="navlink">Career</a></li>
+                    <li class="navlink btn"><a href="lead-form">Lets Talk</a></li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <div class="descrptive-section half-height">
+        <div class="contentBox mrt">
+            <h2 class="">We are Descrptive</h2>
+            <p class="">We use the latest technologies in the digital-first cognitive fields to transform your organization in every aspect</p>
+
+        </div>
+
+    </div>
+
+    <div class="d2block lesspd">
+        <div class="grid">
+
+
+            <div class="hero-banner">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="d2block scrollbox_parent_wrapper">
+        <div class="grid">
+            <div class="box-heading">
+                <h3>Explore Our Expertise </h3>
+            </div>
+            <div class="scrollbox slider">
+                <div class="serviceBox">
+                    <div class="iconbox"><img src="assets/descriptive/images/svg/img-services-strategy.svg" /></div>
+                    <h3 class="textcenter">Strategy & Consulting</h3>
+                </div>
+                <div class="serviceBox">
+                    <div class="iconbox"><img src="assets/descriptive/images/svg/img-services-product.svg" /></div>
+                    <h3 class="textcenter">Product Innovations</h3>
+                </div>
+                <div class="serviceBox">
+                    <div class="iconbox"><img src="assets/descriptive/images/svg/img-services-ai.svg" /></div>
+                    <h3 class="textcenter">A.I. / M.L.</h3>
+                </div>
+                <div class="serviceBox">
+                    <div class="iconbox"><img src="assets/descriptive/images/svg/img-services-datasecurity.svg" /></div>
+                    <h3 class="textcenter">Information Security</h3>
+                </div>
+                <div class="serviceBox">
+                    <div class="iconbox"><img src="assets/descriptive/images/svg/img-services-gis.svg" /></div>
+                    <h3 class="textcenter">GIS & Mapping</h3>
+                </div>
+                <div class="serviceBox">
+                    <div class="iconbox"><img src="assets/descriptive/images/svg/img-services-cloudops.svg" /></div>
+                    <h3 class="textcenter">Infra-As-A-Service</h3>
+                </div>
+                <div class="serviceBox">
+                    <div class="iconbox"><img src="assets/descriptive/images/svg/img-services-iot.svg" /></div>
+                    <h3 class="textcenter">Internet of Things</h3>
+                </div>
+                <div class="serviceBox">
+                    <div class="iconbox"><img src="assets/descriptive/images/svg/img-services-blockchain.svg" /></div>
+                    <h3 class="textcenter">Blockchain Technologies</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d5block" id="lead-form">
+        <div class="grid">
+            <div class="subfooter">
+                <div class="col-50 animate__animated">
+                    <div class="fullbox">
+                        <h3>Contact Us</h3>
+                        <div class="subcontent">Provide us with some basic information, and we shall get in touch with you
+                        </div>
+                    </div>
+                </div>
+                <div class="col-50 ds animate__animated">
+                    <form name='form-lead' method='post' action="configration.php">
+                    <div class="form50">
+                        <div class="formBox ">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Name" value="" />
+                        </div>
+                        <div class="formBox">
+                            <label>Email</label>
+                            <input type="text" name="email"  placeholder="Email" value="" />
+                        </div>
+                        <div class="formBox">
+                            <label>Phone</label>
+                            <input type="text" name="phone"  placeholder="Phone" value="" />
+                        </div>
+                        <div class="formBox ">
+                            <label>Name</label>
+                            <select>
+                                <option value="business-use">Business</option>
+                                <option value="career-use">Career</option>
+                            </select>
+                        </div>
+                        <div class="formBox">
+                            <label>Comments</label>
+                            <textarea type="text" name="comment" cols="2" rows="2" placeholder="Write a detailed project requirement" value="" /></textarea>
+                        </div>
+                        <div class="formBox">
+                            <div class="upload-btn-wrapper">
+                                <button class="upload-btn-wrapper_btn">Upload a file</button>
+                                <input type="file" name="myfile" />
+                            </div>
+                        </div>
+
+                        <input type="submit" type="submit" name="submit" value="Register Now" class="btn" />
+                        
+                    </div>
+    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="csfooter">
+        <div class="grid">
+            <div class="footerlogo">
+                <img src="assets/descriptive//images/logodark.png" width="214" heght="67">
+            </div>
+            <div class="footer-item">
+                <div class="footer-left">
+                    <div class="flex-align">
+                        <div class="col50">
+                            <div class="add">Suite # 1105, 38 Dan Leckie Way Toronto M5V 2V6, Canada</div>
+                            hello@descriptive.ai
+                        </div>
+                        <div class="col50">
+    
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="footer-right">
+                    <ul class="ftlink">
+                        <li><a href="/about-us">About</a></li>
+                        <li><a href="/insights">Insights</a></li>
+                        <li><a href="/industries">Industries</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/career">Career</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerlogo hide">
+                <ul class="sociallink">
+                    <li><a href="https://www.facebook.com/k2sconsult" class="socialimg facebook invert">Facebook</a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="socialimg twitter invert">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/company/k2sconsult" class="socialimg linkedin invert">Linkedin</a></li>
+                    <li><a href="https://www.instagram.com/k2sconsult" class="socialimg insta invert">Instagram</a>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+@mixin readmore{
+    background: #F0F0FB;
+    padding: 15px;
+    text-decoration: none;
+    color: #2B2A3A;
+    display: inline-block;
+}
+//USING FOR TRAVEL
+.tgrid2{
+    max-width: $row;box-sizing: border-box;margin: 0px auto;display: flex;flex-wrap: wrap;
+    @media #{$medium-plane}{width:100%;padding:0px 2%}
+    &.gr{ @include grid;z-index: 1; position: relative;
+        h2{padding: 20px 0;}
+        @media #{$medium-plane}{width:100%;
+            h2{padding:20px 30px}
+        }
+        @media #{$small-plane}{width:100%;
+            h2{padding:20px 30px;width: 100%; text-align: center;}
+        }
+    }
+    
+    @media #{$xsmall-plane}{width:$full}
+    .tgridclm{width:100%;display: flex;box-sizing: border-box;
+        &.equalspace{
+            width: 100%; justify-content: space-between;
+            @media only screen and (max-width: 667px){ width:$full; margin-top:40px;
+                .service-section{width: 100%;}
+            }
+            .author{font-size: 16px; margin: 10px 0 0;}
+            .small-text{font-size: 14px; color:#808080; margin: 0;}
+        }
+            .full-length-box{width:100%; }
+        
+       
+      
+    }
+    .tgrid2clm{
+        width:50%;display: flex;box-sizing: border-box;
+        &.justify-end{justify-content: end;
+        
+            @media only screen and (max-width:440px){
+                justify-content: flex-start;
+                a{margin:20px 0}
+            }
+        }
+        &.equalspace{
+            width: 50%; justify-content: space-between;
+            @media only screen and (max-width: 667px){ width:$full; margin-top:40px;
+                .service-section{width: 100%;}
+            }
+            .author{font-size: 16px; margin: 10px 0 0;}
+            .small-text{font-size: 14px; color:#808080; margin: 0;}
+            @media #{$medium-plane}{width:45%}
+        }
+            .full-length-box{width:100%; }
+        
+        @media #{$medium-plane}{width:45%}
+        @media #{$xsmall-plane}{width:$full}
+        
+    }
+    .tgrid3clm{
+        width:33%;display: flex;box-sizing: border-box;
+        &.equalspace{
+            width: 30%; justify-content: space-between;
+            @media only screen and (max-width: 667px){ width:$full;
+                .service-section{width: 100%;}
+            }
+            .author{font-size: 16px; margin: 10px 0 0;}
+            .small-text{font-size: 14px; color:#808080; margin: 0;}
+            @media #{$medium-plane}{width:45%}
+            @media only screen and (max-width: 640px){width:$full;
+                width: 100%; margin: 20px 0;
+            }
+        }
+            .full-length-box{width:100%; }
+        
+        @media #{$medium-plane}{width:45% ; margin-bottom: 50px;}
+        @media #{$xsmall-plane}{width:$full}
+    }
+    
+}
