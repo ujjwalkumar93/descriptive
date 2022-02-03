@@ -58,7 +58,7 @@
             </div>
             <div class="tgrid2 serviceblock topmargin ourteam-member">
 
-                <div class="tgrid2clm equalspace">
+                <!-- <div class="tgrid2clm equalspace">
                     <div class="service-section">
                         <div class="imgbanner">
                             <img src="assets/descriptive/images/img-covid1-healthcare.jpg" />
@@ -77,9 +77,21 @@
                             <a href="/insights/ai-in-vet-industry.php" class="service-more"><i class="fa fa-arrow-down picon" aria-hidden="true"></i></a>
                         </h3>
                     </div>
-                </div>
-
-
+                </div> -->
+                {% if insights_list %}
+                    {% for insight in insights_list %}
+                    <div class="tgrid2clm equalspace">
+                        <div class="service-section">
+                            <div class="imgbanner">
+                                <img src={{insight.image}} />
+                            </div>
+                            <h3>{{insight.insight_name}}
+                                <a href="/view_insight/?{{insight.name}}" class="service-more"><i class="fa fa-arrow-down picon" aria-hidden="true"></i></a>
+                            </h3>
+                        </div>
+                    </div> 
+                    {% endfor %}
+                {% endif %}
 
             </div>
         </div>
