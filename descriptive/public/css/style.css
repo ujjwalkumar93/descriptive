@@ -8,35 +8,35 @@
 
 @font-face {
   font-family: 'ginger_pro';
-  src: url("assets/descriptive/fonts/gingerpro-bold-webfont.woff2") format("woff2"), url("../fonts/gingerpro-bold-webfont.woff") format("woff"), url("../fonts/gingerpro-bold-webfont.ttf") format("truetype");
+  src: url("../fonts/gingerpro-bold-webfont.woff2") format("woff2"), url("../fonts/gingerpro-bold-webfont.woff") format("woff"), url("../fonts/gingerpro-bold-webfont.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ginger_pro';
-  src: url("assets/descriptive/fonts/gingerpro-demi-webfont.woff2") format("woff2"), url("../fonts/gingerpro-demi-webfont.woff") format("woff"), url("../fonts/gingerpro-demi-webfont.ttf") format("truetype");
+  src: url("../fonts/gingerpro-demi-webfont.woff2") format("woff2"), url("../fonts/gingerpro-demi-webfont.woff") format("woff"), url("../fonts/gingerpro-demi-webfont.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ginger_pro';
-  src: url("assets/descriptive/fonts/gingerpro-regularit-webfont.woff2") format("woff2"), url("../fonts/gingerpro-regularit-webfont.woff") format("woff"), url("../fonts/gingerpro-regularit-webfont.ttf") format("truetype");
+  src: url("../fonts/gingerpro-regularit-webfont.woff2") format("woff2"), url("../fonts/gingerpro-regularit-webfont.woff") format("woff"), url("../fonts/gingerpro-regularit-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'ginger_pro';
-  src: url("assets/descriptive/fonts/gingerpro-light-webfont.woff2") format("woff2"), url("../fonts/gingerpro-light-webfont.woff") format("woff"), url("../fonts/gingerpro-light-webfont.ttf") format("truetype");
+  src: url("../fonts/gingerpro-light-webfont.woff2") format("woff2"), url("../fonts/gingerpro-light-webfont.woff") format("woff"), url("../fonts/gingerpro-light-webfont.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ginger_pro';
-  src: url("assets/descriptive/fonts/f37gingerpro-regular-webfont.woff2") format("woff2"), url("../fonts/f37gingerpro-regular-webfont.woff") format("woff"), url("../fonts/f37gingerpro-regular-webfont.ttf") format("truetype");
+  src: url("../fonts/f37gingerpro-regular-webfont.woff2") format("woff2"), url("../fonts/f37gingerpro-regular-webfont.woff") format("woff"), url("../fonts/f37gingerpro-regular-webfont.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -954,11 +954,11 @@ input::placeholder {
   height: 24px;
   right: 13px;
   top: 7px;
-  background: transparent url(assets/descriptive/images/arrow_down.png) no-repeat center center;
+  background: transparent url(../images/arrow_down.png) no-repeat center center;
 }
 
 .ac-container input:checked + label:hover:after {
-  background-image: url(assets/descriptive/images/arrow_up.png);
+  background-image: url(../images/arrow_up.png);
 }
 
 .ac-container input {
@@ -1107,7 +1107,7 @@ input::placeholder, textarea::placeholder {
 
 .iconcustome:before {
   content: "";
-  background: url(assets/descriptive/images/sprite-svg.svg);
+  background: url(../images/sprite-svg.svg);
   width: 25px;
   height: 25px;
   position: absolute;
@@ -1121,7 +1121,7 @@ input::placeholder, textarea::placeholder {
 
 .iconcustome.boxformat:before {
   content: "";
-  background: url(assets/descriptive/images/sprite-svg.svg);
+  background: url(../images/sprite-svg.svg);
   width: 40px;
   height: 40px;
   position: absolute;
@@ -1173,7 +1173,7 @@ input::placeholder, textarea::placeholder {
   content: "";
   width: 40px;
   height: 40px;
-  background: #2046f5 url(assets/descriptive/images/sprite-svg.svg) no-repeat 0 0;
+  background: #2046f5 url(../images/sprite-svg.svg) no-repeat 0 0;
   margin-right: 15px;
   border-radius: 50%;
   position: relative;
@@ -1421,7 +1421,7 @@ p.small {
 }
 
 .logowrap .descrptive-logo {
-  background: url(assets/descriptive/images/logo.png) no-repeat;
+  background: url(../images/logo.png) no-repeat;
   width: 160px;
   height: 45px;
   display: inline-block;
@@ -1481,7 +1481,7 @@ header {
 
 header .descrptive-logo {
   width: 250px;
-  background: url("assets/descriptive/images/logodark.png") no-repeat;
+  background: url("../images/logodark.png") no-repeat;
   font-size: 0;
   padding: 35px 0px;
   float: left;
@@ -1494,7 +1494,7 @@ header .descrptive-logo {
     margin-left: 25px;
     padding: 35px 0;
     background-position: 0 18px;
-    background: url(assets/descriptive/images/logodark.png) no-repeat;
+    background: url(../images/logodark.png) no-repeat;
     background-size: 60%;
     background-position: 0px 17px;
   }
@@ -1513,7 +1513,7 @@ header .hamburgermenu_icon {
     z-index: 102;
     right: 20px;
     top: 20px;
-    background: url(assets/descriptive/images/ninedots.png) no-repeat;
+    background: url(../images/ninedots.png) no-repeat;
     background-position: -4px 0px;
   }
 }
@@ -1831,14 +1831,14 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 }
 
 .menu_wrapper.fixedh.invert .descrptive-logo {
-  background: url(assets/descriptive/images/logo.png) no-repeat 0px 5px;
+  background: url(../images/logo.png) no-repeat 0px 5px;
   background-size: auto;
   margin-top: 10px;
 }
 
 @media only screen and (max-width: 1024px) {
   .menu_wrapper.fixedh.invert .descrptive-logo {
-    background: url(assets/descriptive/images/logodark.png) no-repeat 20px 5px;
+    background: url(../images/logodark.png) no-repeat 20px 5px;
     background-size: 70%;
   }
 }
@@ -1960,7 +1960,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
   margin-left: 0px;
   padding: 35px 0;
   background-position: 0 18px;
-  background: url(assets/descriptive/images/logodark.png) no-repeat;
+  background: url(../images/logodark.png) no-repeat;
   background-size: 60%;
   background-position: 20px 15px;
 }
@@ -1987,7 +1987,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 
 .process-section:before {
   content: "";
-  background: url("assets/descriptive/images/img-repeater-left.jpeg") no-repeat;
+  background: url("../images/img-repeater-left.jpeg") no-repeat;
   position: absolute;
   width: 500px;
   height: 500px;
@@ -2004,7 +2004,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 
 .process-section:after {
   content: "";
-  background: url("assets/descriptive/images/img-repeater-right.png") no-repeat;
+  background: url("../images/img-repeater-right.png") no-repeat;
   position: absolute;
   width: 500px;
   height: 500px;
@@ -2145,7 +2145,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
   width: 100%;
   height: 700px;
   position: relative;
-  background: url("assets/descriptive/images/Rectangle-24.png") no-repeat center center;
+  background: url("../images/Rectangle-24.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -3141,7 +3141,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 }
 
 .d3block.bg-join {
-  background: url("assets/descriptive/images/experties.jpeg");
+  background: url("../images/experties.jpeg");
   padding: 100px 0;
 }
 
@@ -3162,7 +3162,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 }
 
 .d3block.bg-experties {
-  background: url("assets/descriptive/images/experties.jpeg");
+  background: url("../images/experties.jpeg");
   padding: 100px 0;
 }
 
@@ -3599,7 +3599,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 }
 
 .sociallink li a.socialimg {
-  background: url("assets/descriptive/images/sm-icons.svg") no-repeat;
+  background: url("../images/sm-icons.svg") no-repeat;
 }
 
 .sociallink li a.socialimg.facebook {
@@ -3644,7 +3644,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 }
 
 .sociallink.withbg .socialimg {
-  background: #7EC8E3 url("assets/descriptive/images/sm-icons.svg") no-repeat;
+  background: #7EC8E3 url("../images/sm-icons.svg") no-repeat;
   padding: 20px;
   display: inline-block;
 }
@@ -3917,7 +3917,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
   width: 30px;
   height: 30px;
   position: absolute;
-  background: url("assets/descriptive/images/sprite-svg.svg") no-repeat 0 0;
+  background: url("../images/sprite-svg.svg") no-repeat 0 0;
   left: 0;
   right: 0;
   margin: 0px auto;
@@ -4077,7 +4077,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 
 .mobile-cirlce-menu ul .mobile-cirlce-menu-item:before {
   content: "";
-  background: url("assets/descriptive/images/sprite-svg.svg") no-repeat 0 0;
+  background: url("../images/sprite-svg.svg") no-repeat 0 0;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -4146,7 +4146,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 }
 
 .videoplay {
-  background: url(assets/descriptive/images/video-img.png) no-repeat;
+  background: url(../images/video-img.png) no-repeat;
   width: 900px;
   height: 500px;
   margin: 60px auto 0;
@@ -4157,7 +4157,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 .videoplay .videoicon {
   width: 60px;
   height: 60px;
-  background: url(assets/descriptive/images/vd-icon.svg) no-repeat;
+  background: url(../images/vd-icon.svg) no-repeat;
   top: 50%;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
@@ -4175,7 +4175,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 }
 
 .hero-banner {
-  background: url(assets/descriptive/images/video-img.png) no-repeat;
+  background: url(../images/video-img.png) no-repeat;
   width: 900px;
   height: 500px;
   margin: 60px auto 0;
@@ -4210,7 +4210,7 @@ header .navigation .navrow li.dropdown:hover .dropbox {
 }
 
 .serviceblock-section.bg-blog {
-  background: url("assets/descriptive/images/bg-blog.jpg") repeat-x center center;
+  background: url("../images/bg-blog.jpg") repeat-x center center;
 }
 
 .serviceblock.blogs {
