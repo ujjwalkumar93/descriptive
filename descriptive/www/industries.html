@@ -40,7 +40,29 @@
 
     </div>
 
+    {% if data %}
+    {% for d in data %}
     <div class="d2block">
+        <div class="grid">
+            <div class="boxset">
+                <div class="boxleft">
+                    <div class="imgbox"><img src={{d.image}}></div>
+                </div>
+                <div class="boxleft withtext">
+                    <h2>{{d.industry_name}}</h2>
+                    <p>{{d.description}}</p>
+
+                    <a href="/view_industries/?{{d.name}}" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    <!-- <div class="d2block">
         <div class="grid">
             <div class="boxset">
                 <div class="boxleft">
@@ -149,7 +171,7 @@
 
             </div>
         </div>
-    </div>
+    </div> --> -->
 
 
 
@@ -243,7 +265,7 @@
 
     <!-- <?php include_once 'component/lead-form.php'; ?>
 
-    <?php include_once 'component/footer.php'; ?> -->
+    <?php include_once 'component/footer.php'; ?>
 
     <div class="d5block" id="lead-form">
         <div class="grid">
