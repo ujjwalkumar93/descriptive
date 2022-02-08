@@ -46,6 +46,10 @@ home_page = "index"
 # role_home_page = {
 #	"Role": "home_page"
 # }
+website_route_rules = [
+	{"from_route": "/insight/<name>", "to_route": "insight"},
+	{"from_route": "/industry/<name>", "to_route": "industry"},
+]
 
 # Generators
 # ----------

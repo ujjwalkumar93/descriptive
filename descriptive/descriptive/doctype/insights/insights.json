@@ -11,7 +11,8 @@
   "image",
   "website",
   "sort_order",
-  "project_info"
+  "project_info",
+  "route"
  ],
  "fields": [
   {
@@ -23,7 +24,8 @@
   {
    "fieldname": "insight_name",
    "fieldtype": "Data",
-   "label": "Insight Name"
+   "label": "Insight Name",
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -49,11 +51,16 @@
    "fieldname": "project_info",
    "fieldtype": "Data",
    "label": "Project Info"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-03 20:15:01.387791",
+ "modified": "2022-02-08 02:22:48.818394",
  "modified_by": "Administrator",
  "module": "Descriptive",
  "name": "Insights",
@@ -70,6 +77,15 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
   }
  ],
  "sort_field": "modified",
