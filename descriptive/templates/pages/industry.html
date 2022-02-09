@@ -1,74 +1,156 @@
-<html><head>
+
+
+
+<html>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes, minimum-scale=1">
 
     <title>DESCRPTIVE || Consulting Redefined </title>
-    <link href="/css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/assets/descriptive/css/animate.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/descriptive/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/assets/descriptive/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" type="text/css">
     <script src="/js/jquery-3.4.1.min.js"></script>
 
-    <style>
-        .descrptive-section1 {
-        width: 100%;
-        height: 700px;
-        position: relative;
-        background: url("/assets/descriptive/images/Rectangle-24.png") no-repeat center center;
-        background-size: cover;
-        }
-        .descrptive-section1.half-height1 {
-  height: 450px;
-}
-    </style>
-    
-<style>tcxspan{text-decoration: underline;cursor: pointer;}</style></head>
+</head>
 
-<body data-new-gr-c-s-check-loaded="14.1047.0" data-gr-ext-installed="">
+<body>
     <div class="menu_wrapper fixedh invert">
     <header class="grid">
-        <a href="/index" class="descrptive-logo" title="descrptive-logo">Descrptive Logo</a>
+        <a href="/index.php" class="descrptive-logo" title="descrptive-logo">Descrptive Logo</a>
         <div class="hamburgermenu_icon" id="hammenu">
             <div></div>
         </div>
         <div class="navigation">
             <ul class="navrow">
-                <ul id="primary-menu" class="menu nav-menu covid-leading-transformation-in-india" aria-expanded="false">
-                    <li><a href="/about-us" class="navlink ">About</a></li>
-                    <li><a href="/insights" class="navlink ">Insights</a></li>
-                    <li><a href="/industries" class="navlink ">Industries</a></li>
-                    <li><a href="/services" class="navlink ">Services</a></li>
-                    <li><a href="/career" class="navlink ">Career</a></li>
+                <ul id="primary-menu" class="menu nav-menu healthcare" aria-expanded="false">
+                    <li><a href="https://descriptive.ai/about-us.php" class="navlink ">About</a></li>
+                    <li><a href="https://descriptive.ai/insights.php" class="navlink ">Insights</a></li>
+                    <li><a href="https://descriptive.ai/industries.php" class="navlink ">Industries</a></li>
+                    <li><a href="https://descriptive.ai/services.php" class="navlink ">Services</a></li>
+                    <li><a href="https://descriptive.ai/career.php" class="navlink ">Career</a></li>
                     <li class="navlink btn"><a href="#lead-form">Lets Talk</a></li>
                 </ul>
             </ul>
         </div>
     </header>
 </div>
-    <div class="descrptive-section half-height" style="background: url(/assets/descriptive/images/Rectangle-24.png)">
-        <div class="contentBox mrt">
-            <h2 class="animate__fadeInUp">Excellence in Your Industry</h2>
-            <p class="animate__fadeInUp">Helping Businesses Elevate in Competitive and Evolving Industries</p>
-
+    <div class="descrptive-section half-height">
+    <div class="grid">
+        <div class="contentBox mrt overlay-text">
+            <h2 class="">Healthcare
+</h2>
+            <p class="">Maximizing Value to Maximize Human Health 
+</p>
         </div>
+        </div>
+    </div>
 
+    <div class="d2block padding-less">
+        <div class="grid">
+          <p class="full-wd-text">{{data.description}}</p>
+        </div>
     </div>
 
 
-    <div class="tgrid2 serviceblock topmargin blogs">
+    <!-- <div class="d2block ">
+        <div class="grid">
+            <div class="border-with-text">
+                <span>List of Industries</span>
+            </div>
+            <div class="tgrid2 serviceblock ">
+                    <div class="tgrid2 serviceblock serviceblock-with-slider">
+                    <div class="tgrid3clm equalspace sideborder" data-id="healthcare">
+                        <div class="service-section">
+                                <div class="imgbanner">
+                                    <img src="https://descriptive.ai/images/img-industry-healthcare.jpg" />
+                                </div>
+                            <div class="more-industry">
+                            <div class="category">Healthcare</div>
+                            <h4><a href="https://descriptive.ai/industries/healthcare.php">Maximizing Value to Maximize Human Health 
+                            </a></h4>
+                            <p>With ever-changing laws and policies, the evolution of treatments and medication, a range of professions, the healthcare profession is extremely complex and volatile.</p>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="tgrid3clm equalspace sideborder" data-id="technology">
+                        <div class="service-section">
+                            <div class="imgbanner">
+                            <img src="https://descriptive.ai/images/img-industry-technology.jpg" />
+                            </div>
+                            <div class="more-industry">
+                            <div class="category">Technology</div>
+                                <h4><a href="https://descriptive.ai/industries/technology.php">Helping you adapt while you innovate
 
-        <div class="tgridclm equalspace blogfull">
-            <div class="service-section">
-                <div class="imgbanner full-banner">
-                    <img src={{data.image}}>
-                </div>
-                <h2>{{data.industry_name}}
-                </h2>
-                <p></p>
-                {{data.description}}
+                                </a></h4>
+
+                                <p>Technology is changing the world at an exponential pace, leaving us all playing catch up. We believe in staying on top of trends and our data-driven approach helps us foresee and identify the right trends to help technology firms thrive even in a fast-changing world. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tgrid3clm equalspace sideborder" data-id="media">
+                        <div class="service-section">
+                            <div class="imgbanner">
+                                <img src="https://descriptive.ai/images/img-industry-media1.jpg" />
+                            </div>
+                                <div class="more-industry">
+                                    <div class="category">Media & Entertainment
+
+                                    </div>
+                                    <h4><a href="https://descriptive.ai/industries/media.php">Helping you Thrive in the Unpredictable Landscape
+</a></h4>
+                                    <p>As the pace of content creation picks up, so does consumption, which has made way for the media and entertainment industry to grow at an unprecedented rate. </p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="tgrid3clm equalspace sideborder">
+                        <div class="service-section">
+                            <div class="imgbanner">
+                                <img src="https://descriptive.ai/images/img-industry-renewables.jpg" />
+                            </div>
+                                <div class="more-industry">
+                                    <div class="category">Renewables & Sustainability
+
+                                    </div>
+                                    <h4><a href="https://descriptive.ai/industries/renewables-sustainability.php">Acting for a Better Future
+</a></h4>
+                                    <p>Climate change is one of the most pressing matters that face the whole world today, one that threatens our survival. Changes brought on by increasing fuel mix, supply distribution issues, </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tgrid3clm equalspace sideborder">
+                        <div class="service-section">
+                            <div class="imgbanner">
+                                <img src="https://descriptive.ai/images/img-industry-animalhealth.jpg" />
+                            </div>
+                                <div class="more-industry">
+                                    <div class="category">Animal Health
+                                    </div>
+                                    <h4><a href="https://descriptive.ai/industries/animal-health.php">Conversing with those who can’t speak
+</a></h4>
+                                    <p>Our ecosystem is designed to accommodate more than just one kind of species. And as humans, we have grown more and more fond of and dependent on the fauna around us.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tgrid3clm equalspace sideborder">
+                        <div class="service-section">
+                            <div class="imgbanner">
+                                <img src="https://descriptive.ai/images/img-industry-automobile.jpg" />
+                            </div>
+                                <div class="more-industry">
+                                    <div class="category">Automotive
+                                    </div>
+                                    <h4><a href="javascript:void(0)">Accelerating into a world of possibilities
+</a></h4>
+                                    <p>The pandemic caused a major drift in the direction of the automotive industry. The industry remains challenged by market volatility and a shifting economic, regulatory, and competitive landscape. </p>
+                                </div>
+                            </div>
+                    </div>
+                </div>                </div>
             </div>
         </div>
-    </div>
-
+    </div> -->
 
     
 <div class="d5block" id="lead-form">
@@ -82,19 +164,19 @@
                 </div>
             </div>
             <div class="col-50 ds animate__animated">
-                <form name="form-lead" method="post" action="configration">
+                <form name='form-lead' method='post' action="configration.php">
                 <div class="form50">
                     <div class="formBox ">
                         <label>Name</label>
-                        <input type="text" name="name" placeholder="Name" value="">
+                        <input type="text" name="name" placeholder="Name" value="" />
                     </div>
                     <div class="formBox">
                         <label>Email</label>
-                        <input type="text" name="email" placeholder="Email" value="">
+                        <input type="text" name="email"  placeholder="Email" value="" />
                     </div>
                     <div class="formBox">
                         <label>Phone</label>
-                        <input type="text" name="phone" placeholder="Phone" value="">
+                        <input type="text" name="phone"  placeholder="Phone" value="" />
                     </div>
 					 <div class="formBox ">
                         <label>Name</label>
@@ -105,16 +187,16 @@
                     </div>
                     <div class="formBox">
                         <label>Comments</label>
-                        <textarea type="text" name="comment" cols="2" rows="2" placeholder="Write a detailed project requirement" value=""></textarea>
+                        <textarea type="text" name="comment" cols="2" rows="2" placeholder="Write a detailed project requirement" value="" /></textarea>
                     </div>
                     <div class="formBox">
                         <div class="upload-btn-wrapper">
                             <button class="upload-btn-wrapper_btn">Upload a file</button>
-                            <input type="file" name="myfile">
+                            <input type="file" name="myfile" />
                         </div>
                     </div>
 
-                    <input type="submit" name="submit" value="Register Now" class="btn">
+                    <input type="submit" type="submit" name="submit" value="Register Now" class="btn" />
                     
                 </div>
 </form>
@@ -145,11 +227,11 @@
             <div class="footer-right">
                 <ul class="ftlink">
 
-                    <li><a href="/about-us">About</a></li>
-                    <li><a href="/insights">Insights</a></li>
-                    <li><a href="/industries">Industries</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/career">Career</a></li>
+                    <li><a href="/about-us.php">About</a></li>
+                    <li><a href="/insights.php">Insights</a></li>
+                    <li><a href="/industries.php">Industries</a></li>
+                    <li><a href="/services.php">Services</a></li>
+                    <li><a href="/career.php">Career</a></li>
                 </ul>
             </div>
         </div>
@@ -168,6 +250,6 @@
 </div>
 
 <script src="/js/slick.min.js"></script>
-<script src="/js/descrptive.js"></script>'
+<script src="/js/descrptive.js"></script>'</body>
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+</html>
