@@ -155,7 +155,31 @@
     </div>
 </div>
 
-<script src="/js/slick.min.js"></script>
-<script src="/js/descrptive.js"></script>'
+<!-- <script src="/assets/descriptive/js/slick.min.js"></script>
+<script src="/assets/descriptive/js/descrptive.js"></script> -->
+<script>
+    $(window).scroll(function(event){
+    var st = $(this).scrollTop();
+    scrPercentage = (st * 2.5 /100);
+    offX = 0,offY=0;
+    one = 45;
+    two = 45;
+    three =70;
+    
+    if(st < 50) 
+      $('.menu_wrapper').addClass('invert');
+    else
+      $('.menu_wrapper').removeClass('invert');
+
+      if(st > 0 && st < 700){
+        
+        $('.allboxImg .box-sm-img.one').css('top',(one+scrPercentage)+'%');
+        $('.allboxImg .box-sm-img.two').css('top',(two+scrPercentage)+'%');
+        $('.allboxImg .box-sm-img.three').css('bottom',(three+scrPercentage)+'px');
+        
+      }
+   
+  });
+</script>
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
