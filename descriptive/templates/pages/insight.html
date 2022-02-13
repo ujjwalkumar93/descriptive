@@ -102,7 +102,7 @@
                         </div>
                     </div>
 
-                    <input type="submit" name="submit" value="Register Now" class="btn">
+                    <input type="submit" name="submit" value="Register Now" class="btn" onclick="submitForm()">
                     
                 </div>
 </form>
@@ -181,6 +181,17 @@
       }
    
   });
+  function submitForm(){
+            const form = document.getElementById('form');
+            const xhttp = new XMLHttpRequest();
+            var name =form.elements[0].value
+            var email =form.elements[1].value
+            var phone =form.elements[2].value
+            var reason =form.elements[3].value
+            var msg =form.elements[4].value
+            xhttp.open("GET", `api/method/descriptive.api.handle_form/?name=${name}&email=${email}&phone=${phone}&reason=${reason}&msg=${msg}`);
+            xhttp.send();
+        }
 </script>
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
