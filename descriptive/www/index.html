@@ -251,11 +251,11 @@
                     </div>
                 </div>
                 <div class="col-50 ds animate__animated">
-                    <form name='form-lead' method='post' action="configration.php">
+                    <form name='form-lead' id="form">
                     <div class="form50">
                         <div class="formBox ">
                             <label>Name</label>
-                            <input type="text" name="name" placeholder="Name" value="" />
+                            <input type="text" name="name" placeholder="Name" value=""/>
                         </div>
                         <div class="formBox">
                             <label>Email</label>
@@ -266,7 +266,7 @@
                             <input type="text" name="phone"  placeholder="Phone" value="" />
                         </div>
                          <div class="formBox ">
-                            <label>Name</label>
+                            <label id="select">Name</label>
                             <select>
                                 <option value="business-use">Business</option>
                                 <option value="career-use">Career</option>
@@ -283,7 +283,7 @@
                             </div>
                         </div>
     
-                        <input type="submit" type="submit" name="submit" value="Register Now" class="btn" />
+                        <input type="submit" type="submit" name="submit" value="Register Now" class="btn" onclick="submitForm()"/>
                         
                     </div>
                     </form>
@@ -315,11 +315,11 @@
                 <div class="footer-right">
                     <ul class="ftlink">
     
-                        <li><a href="/about-us.php">About</a></li>
-                        <li><a href="/insights.php">Insights</a></li>
-                        <li><a href="/industries.php">Industries</a></li>
-                        <li><a href="/services.php">Services</a></li>
-                        <li><a href="/career.php">Career</a></li>
+                        <li><a href="/about-us">About</a></li>
+                        <li><a href="/insights">Insights</a></li>
+                        <li><a href="/industries">Industries</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/career">Career</a></li>
                     </ul>
                 </div>
             </div>
@@ -338,7 +338,19 @@
     </div>
     
     <script src="assets/descriptive/js/slick.min.js"></script>
-    <script src="assets/descriptive/js/descrptive.js"></script>'
+    <script src="assets/descriptive/js/descrptive.js"></script>
+    <script>
+        function submitForm(){
+            const form = document.getElementById('form');
+            alert(form.elements['name'])
+            const xhttp = new XMLHttpRequest();
+            //var doc = document.getElementById("name");
+            //alert(form)
+            xhttp.open("POST", 'api/method/descriptive.api.handle_form/?name=ujjwal');
+            xhttp.send();
+            console.log("done")
+        }
+    </script>
 
 </body>
 

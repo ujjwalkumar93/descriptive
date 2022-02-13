@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:industry_name",
  "creation": "2022-02-05 02:03:53.644207",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -7,10 +8,11 @@
  "field_order": [
   "enable",
   "industry_name",
+  "slogan",
+  "short_description",
   "description",
   "image",
-  "sort_order",
-  "industry"
+  "sort_order"
  ],
  "fields": [
   {
@@ -22,7 +24,8 @@
   {
    "fieldname": "industry_name",
    "fieldtype": "Data",
-   "label": "Industry Name"
+   "label": "Industry Name",
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -40,15 +43,19 @@
    "label": "Sort Order"
   },
   {
-   "fieldname": "industry",
-   "fieldtype": "Select",
-   "label": "Industry",
-   "options": "IT"
+   "fieldname": "short_description",
+   "fieldtype": "Data",
+   "label": "Short Description"
+  },
+  {
+   "fieldname": "slogan",
+   "fieldtype": "Data",
+   "label": "Slogan"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-05 02:11:02.691211",
+ "modified": "2022-02-13 14:59:49.176328",
  "modified_by": "Administrator",
  "module": "Descriptive",
  "name": "Industries",

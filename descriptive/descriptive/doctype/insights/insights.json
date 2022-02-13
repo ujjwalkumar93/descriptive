@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:insight_name",
  "creation": "2022-02-03 20:15:01.387791",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,10 +10,7 @@
   "insight_name",
   "description",
   "image",
-  "website",
-  "sort_order",
-  "project_info",
-  "route"
+  "sort_order"
  ],
  "fields": [
   {
@@ -38,29 +36,14 @@
    "label": "Image"
   },
   {
-   "fieldname": "website",
-   "fieldtype": "Data",
-   "label": "Website"
-  },
-  {
    "fieldname": "sort_order",
    "fieldtype": "Data",
    "label": "Sort Order"
-  },
-  {
-   "fieldname": "project_info",
-   "fieldtype": "Data",
-   "label": "Project Info"
-  },
-  {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "label": "Route"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-08 02:22:48.818394",
+ "modified": "2022-02-13 15:08:50.729049",
  "modified_by": "Administrator",
  "module": "Descriptive",
  "name": "Insights",

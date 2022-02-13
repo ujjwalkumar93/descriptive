@@ -38,10 +38,8 @@
     <div class="descrptive-section half-height">
     <div class="grid">
         <div class="contentBox mrt overlay-text">
-            <h2 class="">Healthcare
-</h2>
-            <p class="">Maximizing Value to Maximize Human Health 
-</p>
+            <h2 class="">{{data.industry_name}}</h2>
+            <p class="">{{data.slogan}}</p>
         </div>
         </div>
     </div>
@@ -49,6 +47,21 @@
     <div class="d2block padding-less">
         <div class="grid">
           <p class="full-wd-text">{{data.description}}</p>
+        </div>
+    </div>
+
+    <div class="d2block ">
+        <div class="grid">
+            <div class="border-with-text">
+                <span>List of Industries</span>
+            </div>
+            <div class="tgrid2 serviceblock ">
+                    <div class="tgrid2 serviceblock serviceblock-with-slider slick-initialized slick-slider">
+                        <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="">Previous</button>
+                    </div>
+                    <div class="tgrid2 serviceblock serviceblock-with-slider slick-initialized slick-slider">
+                        <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="">Next</button>
+                    </div>
         </div>
     </div>
 
@@ -126,11 +139,11 @@
             <div class="footer-right">
                 <ul class="ftlink">
 
-                    <li><a href="/about-us.php">About</a></li>
-                    <li><a href="/insights.php">Insights</a></li>
-                    <li><a href="/industries.php">Industries</a></li>
-                    <li><a href="/services.php">Services</a></li>
-                    <li><a href="/career.php">Career</a></li>
+                    <li><a href="/about-us">About</a></li>
+                    <li><a href="/insights">Insights</a></li>
+                    <li><a href="/industries">Industries</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/career">Career</a></li>
                 </ul>
             </div>
         </div>
@@ -150,9 +163,9 @@
 
 <!-- <script src="assets/descriptive/js/slick.min.js"></script>
 <script src="assets/descriptive/js/descrptive.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
     $(window).scroll(function(event){
-        console.log("kk")
     var st = $(this).scrollTop();
     scrPercentage = (st * 2.5 /100);
     offX = 0,offY=0;
@@ -173,6 +186,43 @@
         
       }
    
+  });
+
+  $('.serviceblock-with-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+          dots:true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          dots:true,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          dots:true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      }
+    ]
   });
 </script>
 
