@@ -8,6 +8,7 @@
  "field_order": [
   "enable",
   "industry_name",
+  "intro",
   "slogan",
   "short_description",
   "description",
@@ -51,11 +52,17 @@
    "fieldname": "slogan",
    "fieldtype": "Data",
    "label": "Slogan"
+  },
+  {
+   "description": "Intro will be used for industry list",
+   "fieldname": "intro",
+   "fieldtype": "Data",
+   "label": "Intro"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-13 14:59:49.176328",
+ "modified": "2022-02-14 23:57:09.804705",
  "modified_by": "Administrator",
  "module": "Descriptive",
  "name": "Industries",
