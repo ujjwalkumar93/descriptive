@@ -53,12 +53,27 @@
                 <span>List of Industries</span>
             </div>
             <div class="tgrid2 serviceblock ">
-                    <div class="tgrid2 serviceblock serviceblock-with-slider slick-initialized slick-slider">
-                        <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="">Previous</button>
-                    </div>
-                    <div class="tgrid2 serviceblock serviceblock-with-slider slick-initialized slick-slider">
-                        <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="">Next</button>
-                    </div>
+                    <div class="tgrid2 serviceblock serviceblock-with-slider">
+                        {% if all_industies %}
+                            {% for d in all_industies%}
+                            <div class="tgrid3clm equalspace sideborder" data-id="healthcare">
+                                <div class="service-section">
+                                        <div class="imgbanner">
+                                            <img src="https://descriptive.ai/images/img-industry-healthcare.jpg" />
+                                        </div>
+                                    <div class="more-industry">
+                                    <div class="category">{{d.industry_name}}</div>
+                                    <h4><a href="/industry/{{d.industry_name}}">{{d.short_description}} 
+                                    </a></h4>
+                                    <p>{{d.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        {% endif %}
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 

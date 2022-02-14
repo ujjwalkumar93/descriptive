@@ -2,11 +2,11 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes, minimum-scale=1">
         <title>DESCRPTIVE || Industries </title>
-        <link href="assets/descriptive/css/animate.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/descriptive/css/style.css" rel="stylesheet" type="text/css">
-        <link href="assets/descriptive/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <link href="/assets/descriptive/css/animate.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/descriptive/css/style.css" rel="stylesheet" type="text/css">
+        <link href="/assets/descriptive/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" type="text/css">
-        <script src="assets/descriptive/js/jquery-3.4.1.min.js"></script>
+        <script src="/assets/descriptive/js/jquery-3.4.1.min.js"></script>
     </head>
 
 <body>
@@ -42,23 +42,46 @@
 
     {% if data %}
     {% for d in data %}
-    <div class="d2block">
-        <div class="grid">
-            <div class="boxset">
-                <div class="boxleft">
-                    <div class="imgbox"><img src={{d.image}}></div>
-                </div>
-                <div class="boxleft withtext">
-                    <h2>{{d.industry_name}}</h2>
-                    <p>{{d.short_description}}</p>
+        {% if d.id%2 == 1 %}
+        <div class="d2block">
+            <div class="grid">
+                <div class="boxset">
+                    <div class="boxleft withtext">
+                        <h2>{{d.industry_name}}</h2>
+                        <p>{{d.short_description}}</p>
 
-                    <a href="/industry/{{d.industry_name}}" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
-                    </a>
+                        <a href="/industry/{{d.industry_name}}" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
+                        </a>
+
+                    </div>
+                    <div class="boxleft">
+                        <div class="imgbox">
+                            <img src={{d.image}}></div>
+                    </div>
 
                 </div>
             </div>
         </div>
-    </div>
+        {% endif %}
+        {% if d.id%2 == 0 %}
+        <div class="d2block">
+            <div class="grid">
+                <div class="boxset">
+                    <div class="boxleft">
+                        <div class="imgbox"><img src={{d.image}}></div>
+                    </div>
+                    <div class="boxleft withtext">
+                        <h2>{{d.industry_name}}</h2>
+                        <p>{{d.short_description}}</p>
+
+                        <a href="/industry/{{d.industry_name}}" class="learn_more">Learn More<div class="arrow arrowrotate">→</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
     {% endfor %}
     {% endif %}
 
