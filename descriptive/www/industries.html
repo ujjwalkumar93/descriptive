@@ -42,7 +42,7 @@
 
     {% if data %}
     {% for d in data %}
-        {% if d.id%2 == 1 %}
+        {% if d.id%2 == 0 %}
         <div class="d2block">
             <div class="grid">
                 <div class="boxset">
@@ -63,7 +63,7 @@
             </div>
         </div>
         {% endif %}
-        {% if d.id%2 == 0 %}
+        {% if d.id%2 == 1 %}
         <div class="d2block">
             <div class="grid">
                 <div class="boxset">
