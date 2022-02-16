@@ -13,6 +13,7 @@
   "short_description",
   "description",
   "image",
+  "route",
   "sort_order"
  ],
  "fields": [
@@ -58,11 +59,18 @@
    "fieldname": "intro",
    "fieldtype": "Data",
    "label": "Intro"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Route",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-14 23:57:09.804705",
+ "modified": "2022-02-16 23:31:39.976010",
  "modified_by": "Administrator",
  "module": "Descriptive",
  "name": "Industries",

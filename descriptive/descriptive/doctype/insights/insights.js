@@ -2,7 +2,8 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Insights', {
-	// refresh: function(frm) {
-
-	// }
+	before_save: function(frm) {
+		frm.doc.route = frm.doc.insight_name.toLowerCase().trim().replace(/\s/g,"-");
+		
+	}
 });
