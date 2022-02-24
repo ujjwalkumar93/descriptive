@@ -28,7 +28,7 @@
   },
   {
    "fieldname": "description",
-   "fieldtype": "Text Editor",
+   "fieldtype": "HTML Editor",
    "label": "Description"
   },
   {
@@ -51,7 +51,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-16 23:31:11.367927",
+ "modified": "2022-02-24 10:15:59.374651",
  "modified_by": "Administrator",
  "module": "Descriptive",
  "name": "Insights",
