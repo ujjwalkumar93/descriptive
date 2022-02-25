@@ -11,6 +11,7 @@
   "description",
   "image",
   "route",
+  "dissable_auto_route",
   "sort_order"
  ],
  "fields": [
@@ -47,11 +48,17 @@
    "in_list_view": 1,
    "label": "Route",
    "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "dissable_auto_route",
+   "fieldtype": "Check",
+   "label": "Dissable Auto Route"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-24 10:15:59.374651",
+ "modified": "2022-02-25 09:30:09.851045",
  "modified_by": "Administrator",
  "module": "Descriptive",
  "name": "Insights",

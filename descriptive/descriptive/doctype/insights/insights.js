@@ -3,7 +3,8 @@
 
 frappe.ui.form.on('Insights', {
 	before_save: function(frm) {
-		frm.doc.route = frm.doc.insight_name.toLowerCase().trim().replace(/\s/g,"-");
-		
+		if(frm.doc.dissable_auto_route === 0){
+			frm.doc.route = frm.doc.insight_name.toLowerCase().trim().replace(/\s/g,"-");
+		}		
 	}
 });
